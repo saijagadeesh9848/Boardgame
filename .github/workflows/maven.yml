@@ -14,6 +14,7 @@ on:
   
 
 jobs:
+
   compile:
     name: compile project
     runs-on: ubuntu-latest
@@ -29,7 +30,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B compile --file pom.xml
   
-  test:
+    test:
       name: execute unit test project
       runs-on: ubuntu-latest
 
@@ -44,7 +45,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B test --file pom.xml
         
-   build:
+     build:
       name: build project
       runs-on: ubuntu-latest
 
